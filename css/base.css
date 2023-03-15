@@ -49,6 +49,12 @@ img {
   height: auto;
 }
 
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
 /*========== BASE CLASS==========*/
 .section {
   padding: 1.5rem 0;
@@ -112,10 +118,4 @@ img {
   background-color: var(--text-color);
   border-radius: 50%;
   margin-right: 0.75rem;
-}
-
-#link__button {
-  background: none;
-  border: none;
-  outline: none;
 }
