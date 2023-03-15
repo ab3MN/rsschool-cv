@@ -16,6 +16,3 @@ const off = () => {
 themeButton.onclick = () =>
   localStorage.getItem('isDarkTheme') === null ? on() : off();
 
-navToggle.onclick = () => navMenu.classList.toggle('show-menu');
-
-navMenu.onclick = () => navMenu.classList.remove('show-menu');
