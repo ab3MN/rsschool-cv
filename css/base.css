@@ -113,3 +113,9 @@ img {
   border-radius: 50%;
   margin-right: 0.75rem;
 }
+
+#link__button {
+  background: none;
+  border: none;
+  outline: none;
+}
