@@ -49,12 +49,6 @@ img {
   height: auto;
 }
 
-button {
-  background: none;
-  border: none;
-  outline: none;
-}
-
 /*========== BASE CLASS==========*/
 .section {
   padding: 1.5rem 0;
