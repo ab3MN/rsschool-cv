@@ -6,7 +6,7 @@ const onDarkTheme = () => (
 );
 isDark && onDarkTheme();
 
-const on = () => (onDarkTheme(), localStorage.   setItem('isDarkTheme', true));
+const on = () => (onDarkTheme(), localStorage.setItem('isDarkTheme', true));
 const off = () => {
   themeButton.classList.remove('bx-sun');
   root.classList.remove('dark-theme');
