@@ -2,7 +2,11 @@
     .body {
       margin: 3rem 0;
     }
-  
+
+    .footer{
+      margin-bottom: 35px;
+    }
+    
     .bd-container {
       margin: 0 auto;
     }
