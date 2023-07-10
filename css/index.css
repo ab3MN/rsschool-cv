@@ -10,12 +10,7 @@
     .bd-container {
       margin: 0 auto;
     }
-  
-    .l-header,
-    .scrolltop {
-      display: none;
-    }
-  
+
     .resume {
       display: grid;
       grid-template-columns: 0.5fr 1fr;
