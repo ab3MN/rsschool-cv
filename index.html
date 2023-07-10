@@ -2,21 +2,403 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
   <title>Document</title>
-  <link rel="stylesheet" href="./css/var.css">
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/left.css">
-  <link rel="stylesheet" href="./css/right.css">
-  <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/var.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/left.css" />
+  <link rel="stylesheet" href="./css/right.css" />
+  <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/footer.css">
 </head>
 
-<body>
+<body id="root">
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">Nikolaiev</a>
+      <div class="nav__menu" id="navMenu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">
+              <i class="bx bx-home nav__icon"></i>Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#profile" class="nav__link">
+              <i class="bx bx-user nav__icon"></i>Profile
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#education" class="nav__link">
+              <i class="bx bx-book nav__icon"></i>Education
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="bx bx-receipt nav__icon"></i>Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">
+              <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              <i class="bx bx-award nav__icon"></i>Portfolio
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="navToggle">
+        <i class="bx bx-grid-alt nav__icon"></i>
+      </div>
+    </nav>
+  </header>
 
+  <!--========== MAIN ==========-->
+  <main class="l-main bd-container">
+    <div class="resume" id="cv">
+      <!-- LEFT -->
+      <aside class="resume__left">
+        <!--========== HOME ==========-->
+        <div class="home" id="home">
+          <div class="home__container section bd-grid">
+            <div class="home__data bd-grid">
+              <img src="./img/avatar.jpg" alt="Candidate photo" class="home__img" />
+              <h1 class="home__title">Nikolaiev <b>Mykhailo</b></h1>
+              <h2 class="home__profession">Full Stack developer</h2>
+              <div>
+                <a href="./img/Junior_FullStack_Mykhailo_Nikolaiev_CV.pdf"
+                  download="Junior_FullStack_Mykhailo_Nikolaiev_CV.pdf" class="home__button download">Download</a>
+              </div>
+            </div>
+            <div class="home__address bd-grid">
+              <span class="home__information">
+                <i class="bx bx-map home__icon"></i>Ukraine,Kyiv</span><span class="home__information">
+                <i class="bx bx-envelope home__icon"></i>ab3mn3@gmail.com </span><span class="home__information">
+                <i class="bx bx-phone home__icon"></i>+38-066-800-79-85
+              </span>
+            </div>
+          </div>
+          <i class="bx bx-moon change-theme" id="themeButton"></i>
+          <a href="./img/Junior_FullStack_Mykhailo_Nikolaiev_CV.pdf"
+            download="Junior_FullStack_Mykhailo_Nikolaiev_CV.pdf">
+            <i class="bx bx-download download__button download"></i>
+          </a>
+        </div>
+
+        <!--========== SOCIAL ==========-->
+        <article class="social section" id="social">
+          <h2 class="section__title">SOCIAL</h2>
+          <div class="social__container bd-grid">
+            <a class="social__link" target="_blank" href="https://www.linkedin.com/in/mykhailo-nikolaiev-092ba11b1/">
+              <i class="bx bxl-linkedin-square social__icon"></i>
+              in/mykhailo-nikolaiev
+            </a>
+            <a href="https://github.com/ab3MN" class="social__link" target="_blank">
+              <i class="bx bxl-github social__icon"></i>ab3MN
+            </a>
+            <a href="https://www.codewars.com/users/ab3.js" class="social__link" target="_blank">
+              <i class="bx bx-code-alt social__icon"></i>Codewars
+            </a>
+          </div>
+        </article>
+
+        <!--========== EDUCATION ==========-->
+        <section class="education section" id="education">
+          <h2 class="section__title">Education</h2>
+          <article class="education__container bd-grid">
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder rounder"></span>
+                <span class="education__line line"></span>
+              </div>
+
+              <div class="education__data bd-grid">
+                <h3 class="education__title">Thermal power engineer</h3>
+                <span class="education__studies">Kyiv energy college </span>
+                <span class="education__year">2006-2010</span>
+              </div>
+            </div>
+
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder rounder"></span>
+              </div>
+
+              <div class="education__data bd-grid">
+                <h3 class="education__title">Thermal power engineer</h3>
+                <span class="education__studies">Igor Sikorsky Kyiv Polytechnic Institute</span>
+                <span class="education__year">2014-2018</span>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!--========== SKILLS  ==========-->
+        <section class="skills section" id="skills">
+          <h2 class="section__title">Skills</h2>
+
+          <div class="skills__content bd-grid">
+            <ul class="skills__list">
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>JavaScript
+              </li>
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>TypeScript
+              </li>
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>React/Redux
+              </li>
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>GIT
+              </li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>HTML
+              </li>
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>CSS/SCSS
+              </li>
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>Nodejs(Express)
+              </li>
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>MongoDB/mongoose
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--========== SOFT SKILLS  ==========-->
+        <section class="skills section soft__skills" id="soft__skills">
+          <h2 class="section__title">Soft Skills</h2>
+
+          <div class="skills__content bd-grid">
+            <ul class="skills__list">
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>Analytical
+              </li>
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>Proactive
+              </li>
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>Self-starting
+              </li>
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>Detailed
+              </li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>Communicative
+              </li>
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>Innovative
+              </li>
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>Creative
+              </li>
+              <li class="skills__list--item">
+                <span class="skills__circle circle"></span>Adaptable
+              </li>
+            </ul>
+          </div>
+        </section>
+      </aside>
+
+      <!-- RIGHT -->
+      <aside class="resume__right">
+        <!--========== PROFILE ==========-->
+        <section class="profile section" id="profile">
+          <h2 class="section__title">Profile</h2>
+          <p class="profile__description">
+            Courteous and enthusiastic, I am interested in IT. I recently
+            began to be fascinated by web programming, e.g. developing apps
+            and building websites. I am keen to gain more experience in the
+            field. For this reason, I am looking for a company willing to
+            offer me a placement among their developers. In return, I would
+            offer my full commitment, and be a pleasant and friendly addition
+            to your team. I am therefore currently looking for a job or an
+            internship as a front-end developer.
+            <b>My objective is to become a middle within one years.</b>
+          </p>
+        </section>
+
+        <!--========== EXPERIENCE ==========-->
+        <section class="experience section" id="experience">
+          <h2 class="section__title">Experience</h2>
+          <div class="experience__container bd-grid">
+            <article class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder rounder"></span>
+                <span class="experience__line line"></span>
+              </div>
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">Warehouse manager</h3>
+                <span class="experience__company">From 2021 to Present | PLV SYSTEMS</span>
+              </div>
+            </article>
+
+            <article class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder rounder"></span>
+                <span class="experience__line line"></span>
+              </div>
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">Storekeeper</h3>
+                <span class="experience__company">From 2018 to 2019 | Kasta</span>
+              </div>
+            </article>
+
+            <article class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder rounder"></span>
+              </div>
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">
+                  Mechanic engineer of machine manufacturer
+                </h3>
+                <span class="experience__company">From 2014 to 2018 | Kyiv Electric Train Repair Plant</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!--========== PORTFOLIO ==========-->
+        <section class="portfolio section" id="portfolio">
+          <h2 class="section__title">PORTFOLIO</h2>
+          <div class="portfolio__content">
+            <ul class="portfolio__list">
+              <li class="portfolio__list--item">
+                <a href="https://fascinating-bombolone-1dbbcd.netlify.app/" target="_blank">
+                  <h4 class="portfolio__list--title">
+                    Plv:React/TypeScript/SCSS/responsive
+                  </h4>
+                </a>
+              </li>
+              <li class="portfolio__list--item">
+                <a href="https://adorable-shortbread-a61ef0.netlify.app/" target="_blank">
+                  <h4 class="portfolio__list--title">
+                    Pet:React/TypeScript/Redux/SCCS/Express/MongoDB/mongoose
+                  </h4>
+                </a>
+              </li>
+              <li class="portfolio__list--item">
+                <a href="https://brainy-tutu.cyclic.app/" target="_blank">
+                  <h4 class="portfolio__list--title">
+                    BackEnd:Express/MongoDB/mongoose/Cyclic
+                  </h4>
+                </a>
+              </li>
+              <li class="portfolio__list--item">
+                <a href="https://nervous-rosalind-6fcc08.netlify.app/" target="_blank">
+                  <h4 class="portfolio__list--title">
+                    Travel: React/TypeScript/Adeptive Design
+                  </h4>
+                </a>
+              </li>
+              <li class="portfolio__list--item">
+                <a href="https://awesome-bose-e43aef.netlify.app/" target="_blank">
+                  <h4 class="portfolio__list--title">
+                    Pet: React/Redux/TypeScript/AJAX
+                  </h4>
+                </a>
+              </li>
+
+              <li class="portfolio__list--item">
+                <a href="https://raw.githack.com/ab3MN/CV/master/index.html" target="_blank">
+                  <h4 class="portfolio__list--title">
+                    CV: Adeptive Design(html,css,js)
+                  </h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--========== LANGUAGES ==========-->
+        <section class="languages section">
+          <h2 class="section__title">Languages</h2>
+          <div class="languages__content">
+            <ul class="languages__list bd-grid">
+              <li class="languages__list--item">
+                <span class="languages__circle circle"></span>Ukraine
+              </li>
+              <li class="languages__list--item">
+                <span class="languages__circle circle"></span>Russian
+              </li>
+              <li class="languages__list--item">
+                <span class="languages__circle circle"></span>English(Intermediate)
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="code section">
+          <h2 class="section__title">Code</h2>
+          <p> <code>(() => console.log("Hello World!"))();
+          </code>
+          </p>
+
+        </section>
+
+        <!--========== INTERESTS ==========-->
+        <section class="interests section" id="interests">
+          <h2 class="section__title">Interests</h2>
+          <ul class="interests__container bd-grid">
+            <li class="interests__content">
+              <i class="bx bx-headphone interests__icon"></i>
+              <span class="interests__name">Music</span>
+            </li>
+            <li class="interests__content">
+              <i class="bx bxs-plane-alt interests__icon"></i>
+              <span class="interests__name">Travel</span>
+            </li>
+            <li class="interests__content">
+              <i class="bx bx-book interests__icon"></i>
+              <span class="interests__name">Book</span>
+            </li>
+            <li class="interests__content">
+              <i class="bx bx-dumbbell interests__icon"></i>
+              <span class="interests__name">Gym</span>
+            </li>
+            <li class="interests__content">
+              <i class="bx bx-book-reader interests__icon"></i>
+              <span class="interests__name">Study</span>
+            </li>
+            <li class="interests__content">
+              <i class="bx bx-walk interests__icon"></i>
+              <span class="interests__name">Walk</span>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+    </div>
+    <footer class="footer">
+      <a href="https://github.com/ab3MN" class="social__link" target="_blank">
+        <i class="bx bxl-github social__icon"></i>ab3MN 2023
+      </a>
+      <div class="footer__img--box">
+        <a href="https://rs.school/js/" target="_blank"> <img class="footer__img" src="./img/rs.svg"
+            alt="RS School Logo">
+        </a>
+      </div>
+    </footer>
+
+  </main>
+  <!--========== SCROLL TOP ==========-->
+  <a href="#" class="scrolltop" id="scrollTop">
+    <i class="bx bxs-up-arrow"></i>
+  </a>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
