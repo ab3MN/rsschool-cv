@@ -54,6 +54,9 @@ img {
   width: 100%;
   height: auto;
 }
+br {
+  margin-bottom: 1rem;
+}
 
 /*========== BASE CLASS==========*/
 .section {
